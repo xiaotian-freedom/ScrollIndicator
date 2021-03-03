@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/mMagicIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <FrameLayout
+        android:id="@+id/mLineLayout"
+        android:layout_width="52dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:background="@mipmap/icon_indicator_bg">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mLineView"
+            android:layout_width="18dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_indicator" />
+
+    </FrameLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
